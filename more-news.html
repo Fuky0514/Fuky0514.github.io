@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More News - Reveal News</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fff;
+            color: #232323;
+        }
+        .navbar {
+            background: #1a1a1a;
+            box-shadow: 0 2px 10px rgba(30,0,0,0.13);
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #ff2323;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 24px;
+        }
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 6px 10px;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-menu a:hover {
+            background: #ff2323;
+            color: #fff;
+        }
+        .main-content {
+            margin-top: 90px;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 24px 12px 40px 12px;
+        }
+        .masonry-grid {
+            column-count: 3;
+            column-gap: 28px;
+        }
+        @media (max-width: 900px) {
+            .masonry-grid { column-count: 2; }
+        }
+        @media (max-width: 600px) {
+            .main-content { padding: 8px 2vw 24px 2vw; }
+            .masonry-grid { column-count: 1; }
+        }
+        .reveal-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(35,35,255,0.08);
+            overflow: hidden;
+            display: inline-block;
+            margin-bottom: 24px;
+            width: 100%;
+            border: 2px solid #2323ff33;
+            transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+            break-inside: avoid;
+        }
+        .reveal-card:hover {
+            transform: translateY(-4px) scale(1.025);
+            box-shadow: 0 6px 24px rgba(255,35,35,0.18);
+            border-color: #ff2323;
+        }
+        .reveal-img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            background: #2323ff11;
+            filter: grayscale(20%) contrast(1.12);
+        }
+        .reveal-content {
+            padding: 18px 16px 14px 16px;
+            display: flex;
+            flex-direction: column;
+        }
+        .reveal-label {
+            font-size: 0.92rem;
+            font-weight: bold;
+            border-radius: 6px;
+            padding: 2px 10px;
+            display: inline-block;
+            margin-bottom: 6px;
+        }
+        .label-incident { color: #ff2323; background: #ffeaea; }
+        .label-analysis { color: #2323ff; background: #eaeaff; }
+        .label-exclusive { color: #ff2323; background: #ffeaea; }
+        .label-update { color: #ff2323; background: #ffeaea; }
+        .label-investigation { color: #2323ff; background: #eaeaff; }
+        .label-report { color: #ff2323; background: #ffeaea; }
+        .label-focus { color: #fff; background: #2323ff; }
+        .reveal-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #ff2323;
+            margin-bottom: 8px;
+        }
+        .reveal-meta {
+            font-size: 0.9rem;
+            color: #2323ff;
+            margin-bottom: 10px;
+        }
+        .reveal-desc {
+            font-size: 0.98rem;
+            color: #232323;
+            flex: 1;
+        }
+        .read-more {
+            margin-top: 12px;
+            color: #2323ff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.98rem;
+            align-self: flex-start;
+            transition: color 0.2s;
+        }
+        .read-more:hover {
+            color: #ff2323;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">2025 Reveal</a>
+        <div class="nav-menu">
+            <a href="#">Investigations</a>
+            <a href="#">Topics</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="masonry-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 22px; align-items: start;">
+            <!-- 第一列（左）三个卡片 -->
+            <div style="display: flex; flex-direction: column; gap: 28px;">
+                <div class="reveal-card">
+                    <img class="reveal-img" src="media/news5.jpg" alt="Reveal 5">
+                    <div class="reveal-content">
+                        <div class="reveal-label label-incident">INCIDENT</div>
+                        <div class="reveal-title">Power Plant Sabotage: Who's Responsible?</div>
+                        <div class="reveal-meta">By Dana Fox · Nov 19, 2026</div>
+                        <div class="reveal-desc">
+                            A citywide blackout raises questions about security and the motives behind the attack.
+                        </div>
+                        <a class="read-more" href="#">Read More →</a>
+                    </div>
+                </div>
+                <div class="reveal-card">
+                    <img class="reveal-img" src="media/news6.jpg" alt="Reveal 6">
+                    <div class="reveal-content">
+                        <div class="reveal-label label-analysis">ANALYSIS</div>
+                        <div class="reveal-title">Hero Regulation: Is It Working?</div>
+                        <div class="reveal-meta">By Lee Carter · Nov 18, 2026</div>
+                        <div class="reveal-desc">
+                            We analyze the effectiveness of new hero oversight laws and their impact on public safety.
+                        </div>
+                        <a class="read-more" href="#">Read More →</a>
+                    </div>
+                </div>
+                <div class="reveal-card">
+                    <img class="reveal-img" src="media/news7.jpg" alt="Reveal 7">
+                    <div class="reveal-content">
+                        <div class="reveal-label label-exclusive">EXCLUSIVE</div>
+                        <div class="reveal-title">Interview: The Anonymous Informant Speaks</div>
+                        <div class="reveal-meta">By Sam Rivera · Nov 17, 2026</div>
+                        <div class="reveal-desc">
+                            For the first time, the whistleblower behind last month's leak shares their story.
+                        </div>
+                        <a class="read-more" href="#">Read More →</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第二列（右）四个卡片，交错排列 -->
+            <div style="display: flex; flex-direction: column; gap: 28px; margin-top: 80px;">
+                <div class="reveal-card">
+                    <img class="reveal-img" src="media/news8.jpg" alt="Reveal 8">
+                    <div class="reveal-content">
+                        <div class="reveal-label label-update">UPDATE</div>
+                        <div class="reveal-title">Toxic Waste Cleanup Progress</div>
+                        <div class="reveal-meta">By Jamie Lin · Nov 16, 2026</div>
+                        <div class="reveal-desc">
+                            Officials announce new milestones in the ongoing river decontamination effort.
+                        </div>
+                        <a class="read-more" href="#">Read More →</a>
+                    </div>
+                </div>
+                <div class="reveal-card">
+                    <img class="reveal-img" src="media/news9.jpg" alt="Reveal 9">
+                    <div class="reveal-content">
+                        <div class="reveal-label label-investigation">INVESTIGATION</div>
+                        <div class="reveal-title">The Disappearance of Dr. Hsu</div>
+                        <div class="reveal-meta">By Morgan Lee · Nov 15, 2026</div>
+                        <div class="reveal-desc">
+                            What happened to the scientist at the center of the city's biotech boom?
+                        </div>
+                        <a class="read-more" href="#">Read More →</a>
+                    </div>
+                </div>
+                <div class="reveal-card">
+                    <img class="reveal-img" src="media/news10.jpg" alt="Reveal 10">
+                    <div class="reveal-content">
+                        <div class="reveal-label label-report">REPORT</div>
+                        <div class="reveal-title">Grassroots Movements Gain Momentum</div>
+                        <div class="reveal-meta">By Riley Chen · Nov 14, 2026</div>
+                        <div class="reveal-desc">
+                            Local communities organize for change in the wake of recent events.
+                        </div>
+                        <a class="read-more" href="#">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
