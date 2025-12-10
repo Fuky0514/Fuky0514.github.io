@@ -137,30 +137,87 @@
         .read-more:hover {
             color: #ff2323;
         }
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            margin-top: 60px;
+            padding: 32px 0 18px 0;
+            border-top: 2px solid #2323ff33;
+        }
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: space-between;
+        }
+        .footer-section {
+            min-width: 180px;
+        }
+        .footer-section h3 {
+            color: #ff2323;
+            font-size: 1.08rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-section ul li {
+            margin-bottom: 7px;
+            font-size: 0.98rem;
+        }
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .footer-section ul li a:hover {
+            color: #ff2323;
+        }
+        .footer-contact {
+            font-size: 0.98rem;
+            margin-top: 10px;
+            color: #fff;
+        }
+        .footer-bottom {
+            text-align: center;
+            color: #ff2323;
+            font-size: 0.95rem;
+            margin-top: 18px;
+        }
+        @media (max-width: 600px) {
+            .main-content { padding: 10px; }
+            .headline-video-section { padding: 16px 6px 12px 6px; }
+            .video-player video { height: 200px; }
+            .footer-content { flex-direction: column; gap: 18px; }
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <a href="index.html" class="logo">2025 Reveal</a>
         <div class="nav-menu">
-            <a href="#">Investigations</a>
-            <a href="#">Topics</a>
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="#">Contact</a>
+            <a href="#contact-footer">Contact</a>
         </div>
     </nav>
     <div class="main-content">
         <div class="masonry-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 22px; align-items: start;">
-            <!-- 第一列（左）三个卡片 -->
+            <!-- 第一列（左）两个卡片 -->
             <div style="display: flex; flex-direction: column; gap: 28px;">
                 <div class="reveal-card">
                     <img class="reveal-img" src="media/news5.jpg" alt="Reveal 5">
                     <div class="reveal-content">
-                        <div class="reveal-label label-incident">INCIDENT</div>
-                        <div class="reveal-title">Power Plant Sabotage: Who's Responsible?</div>
+                        <div class="reveal-label label-incident">AI FRAUD </div>
+                        <div class="reveal-title">AI Refund Scam Reversed: Police Confirm 'Female' Customer Was Male</div>
                         <div class="reveal-meta">By Dana Fox · Nov 19, 2026</div>
                         <div class="reveal-desc">
-                            A citywide blackout raises questions about security and the motives behind the attack.
+                            A user's failed AI video refund claim led to false privacy accusations and online harassment against a merchant, whom police later vindicated while exposing the user's true gender.
                         </div>
                         <a class="read-more" href="#">Read More →</a>
                     </div>
@@ -177,23 +234,11 @@
                         <a class="read-more" href="#">Read More →</a>
                     </div>
                 </div>
-                <div class="reveal-card">
-                    <img class="reveal-img" src="media/news7.jpg" alt="Reveal 7">
-                    <div class="reveal-content">
-                        <div class="reveal-label label-exclusive">EXCLUSIVE</div>
-                        <div class="reveal-title">Interview: The Anonymous Informant Speaks</div>
-                        <div class="reveal-meta">By Sam Rivera · Nov 17, 2026</div>
-                        <div class="reveal-desc">
-                            For the first time, the whistleblower behind last month's leak shares their story.
-                        </div>
-                        <a class="read-more" href="#">Read More →</a>
-                    </div>
-                </div>
             </div>
             <!-- 第二列（右）四个卡片，交错排列 -->
             <div style="display: flex; flex-direction: column; gap: 28px; margin-top: 80px;">
                 <div class="reveal-card">
-                    <img class="reveal-img" src="media/news8.jpg" alt="Reveal 8">
+                    <img class="reveal-img" src="media/news7.jpg" alt="Reveal 7">
                     <div class="reveal-content">
                         <div class="reveal-label label-update">UPDATE</div>
                         <div class="reveal-title">Toxic Waste Cleanup Progress</div>
@@ -205,7 +250,7 @@
                     </div>
                 </div>
                 <div class="reveal-card">
-                    <img class="reveal-img" src="media/news9.jpg" alt="Reveal 9">
+                    <img class="reveal-img" src="media/news8.jpg" alt="Reveal 8">
                     <div class="reveal-content">
                         <div class="reveal-label label-investigation">INVESTIGATION</div>
                         <div class="reveal-title">The Disappearance of Dr. Hsu</div>
@@ -215,18 +260,46 @@
                         </div>
                         <a class="read-more" href="#">Read More →</a>
                     </div>
-                </div>
-                <div class="reveal-card">
-                    <img class="reveal-img" src="media/news10.jpg" alt="Reveal 10">
-                    <div class="reveal-content">
-                        <div class="reveal-label label-report">REPORT</div>
-                        <div class="reveal-title">Grassroots Movements Gain Momentum</div>
-                        <div class="reveal-meta">By Riley Chen · Nov 14, 2026</div>
-                        <div class="reveal-desc">
-                            Local communities organize for change in the wake of recent events.
-                        </div>
-                        <a class="read-more" href="#">Read More →</a>
-                    </div>
+                </div>        
+            </div>
+        </div>
+        <!-- Footer -->
+    <footer class="footer" id="contact-footer" style="margin-top:40px; padding:18px 0 10px 0;">
+        <div class="footer-content" style="display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:10px; max-width:900px; padding:0 8px;">
+            <div class="footer-section" style="min-width:90px; grid-column:1; grid-row:1;">
+                <h3 style="font-size:1rem; font-weight:bold; margin-bottom:4px; color:#ff2323;">About Us</h3>
+                <ul style="font-size:0.85rem; line-height:1.3; margin-bottom:2px;">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Mission & Values</a></li>
+                    <li><a href="#">Editorial Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" style="min-width:90px; grid-column:2; grid-row:1;">
+                <h3 style="font-size:1rem; font-weight:bold; margin-bottom:4px; color:#ff2323;">Investors</h3>
+                <ul style="font-size:0.85rem; line-height:1.3; margin-bottom:2px;">
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Financial Reports</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" style="min-width:90px; grid-column:1; grid-row:2;">
+                <h3 style="font-size:1rem; font-weight:bold; margin-bottom:4px; color:#ff2323;">Partners</h3>
+                <ul style="font-size:0.85rem; line-height:1.3; margin-bottom:2px;">
+                    <li><a href="#">Collaborators</a></li>
+                    <li><a href="#">Media Partners</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" style="min-width:110px; grid-column:2; grid-row:2;">
+                <h3 style="font-size:1rem; font-weight:bold; margin-bottom:4px; color:#ff2323;">Contact</h3>
+                <div class="footer-contact" style="font-size:0.85rem; line-height:1.3; margin-top:2px;">
+                    Virtual Number: +1-2025-REVEAL<br>
+                    Facebook: <a href="https://facebook.com/2025revealnews" target="_blank">@2025RevealNews</a><br>
+                    Email: <a href="mailto:contact@2025revealnews.com">contact@2025revealnews.com</a>
                 </div>
             </div>
         </div>
+        <div class="footer-bottom" style="font-size:0.8rem; margin-top:6px;">
+            &copy; 2025 Reveal News. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
