@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City's Silent Guardian Unmasked - Reveal News</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #fff;
+            color: #232323;
+        }
+        .navbar {
+            background: #1a1a1a;
+            box-shadow: 0 2px 10px rgba(30,0,0,0.13);
+            padding: 14px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #ff2323;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+        .nav-menu {
+            display: flex;
+            gap: 24px;
+        }
+        .nav-menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 6px 10px;
+            border-radius: 4px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-menu a:hover {
+            background: #ff2323;
+            color: #fff;
+        }
+        .main-content {
+            margin-top: 90px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 32px 18px 40px 18px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(35,35,255,0.08);
+        }
+        .news-title {
+            font-size: 2.1rem;
+            font-weight: bold;
+            color: #ff2323;
+            margin-bottom: 28px;
+            line-height: 1.3;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 8px #fff, 0 0 2px #ff232344;
+        }
+        .news-image {
+            text-align: center;
+            margin: 36px 0 36px;
+        }
+        .news-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 18px rgba(35,35,255,0.10);
+            border: 2px solid #2323ff33;
+        }
+        .news-content {
+            font-size: 1.08rem;
+            color: #232323;
+            margin: 36px 0 36px;
+            line-height: 1.8;
+        }
+        .news-content p {
+            margin-bottom: 18px;
+        }
+        .news-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 24px;
+            border-top: 2px solid #2323ff22;
+            margin-top: 32px;
+        }
+        .author {
+            font-style: italic;
+            color: #2323ff;
+            font-size: 1rem;
+        }
+        .more-news {
+            color: #2323ff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 18px;
+            border: 2px solid #2323ff;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #fff;
+        }
+        .more-news:hover {
+            background-color: #ff2323;
+            color: #fff;
+            border-color: #ff2323;
+        }
+        @media (max-width: 900px) {
+            .main-content {
+                padding: 16px 4vw 32px 4vw;
+            }
+        }
+        @media (max-width: 600px) {
+            .main-content {
+                margin-top: 70px;
+                padding: 8px 2vw 24px 2vw;
+            }
+            .news-title {
+                font-size: 1.3rem;
+            }
+            .news-footer {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">2025 Reveal</a>
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="more-news.html">More News</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="news-title">
+            National Competition 'Ghost Submissions' Scandal
+        </div>
+
+         <div class="news-image">
+            <img src="media/news8-image.jpg" alt="News Image">
+            <div style="font-size:0.92rem; color:#aeaeaf; border-radius:6px; padding:4px 12px; margin-top:8px; display:inline-block;">
+                Image source: Reveal News / Stock
+            </div>
+        </div>
+
+        <div class="news-content">
+            <p>一场席卷多个国家级竞赛的诚信风暴正在发酵。近期，有参赛者和网友通过公开的搜索引擎与赛事公示系统发现，一个名为“创想未来”的八人团队，其成员名字与作品在不同主办方、但几乎同一时段举办的超过十个国家级竞赛的获奖名单中高频出现。例如，在某国家级人工智能创新大赛中获一等奖的作品《智能城市交通流预测模型》，其核心内容与署名稍作改动后，又出现在另一国家级数据科学竞赛的获奖名单中。</p>
+            <p>A storm of integrity issues is brewing across multiple national-level competitions. Recently, participants and netizens have discovered through public search engines and competition announcement systems that an eight-person team named "Innovate for the Future" has their names and works frequently appearing in the winning lists of over ten national-level competitions held by different organizers but at almost the same time. For instance, the first-prize-winning work "Intelligent Urban Traffic Flow Prediction Model" in a certain national-level artificial intelligence innovation competition, with its core content and authorship slightly modified, reappeared in the winning list of another national-level data science competition.  </p>
+            <p>“这已经不是‘一稿多投’，而是有组织的‘幽灵投稿’和身份冒用。”一位不愿具名的赛事评审专家指出。根据初步网络溯源和部分赛事组委会的交叉比对，更令人震惊的细节浮出水面。在这八名成员中，至少有两人被证实使用完全相同的姓名和作品（仅修改标题）在不同赛事中注册和提交；另有一人则被指直接复制了往届其他获奖者的姓名和个人陈述，仅替换了所属单位信息。这种行为已超出一般的学术不端，涉嫌伪造身份信息。</p>
+            <p>"This is no longer about 'multiple submissions of the same manuscript', but rather organized 'ghost submissions' and identity theft," a review expert who preferred to remain anonymous pointed out. According to initial online traceability and cross-checks by some event organizing committees, even more shocking details have emerged. Among these eight members, at least two have been confirmed to have registered and submitted the same work (with only the title modified) under the exact same name in different events; another one is suspected of directly copying the name and personal statement of a previous winner, only changing the affiliated institution information. Such behavior goes beyond ordinary academic misconduct and is suspected of forging identity information. </p>
+            <p>这一系列异常参赛行为严重破坏了国家级赛事的公信力。此类赛事通常与学生的综合素质评价、奖学金评定乃至研究生推免资格紧密关联，其公平性至关重要。近年来，从书法比赛获奖名单照搬网络人名库，到IT类学科竞赛中成规模的作弊，各类赛事乱象频发，暴露出在功利导向下，部分参赛者与组织方对规则的漠视。此次事件中，一个团队能够如此“高效”地穿梭于多个严肃的国家级平台，也引发了公众对赛事间信息壁垒和审核机制失效的强烈质疑。</p>
+            <p>This series of abnormal competition behaviors has seriously undermined the credibility of national-level events. Such events are usually closely related to students' comprehensive quality evaluations, scholarship awards, and even the qualification for being recommended for postgraduate studies. Their fairness is of vital importance. In recent years, from copying names from online databases for award lists in calligraphy competitions to large-scale cheating in IT discipline contests, various irregularities in competitions have occurred frequently, revealing the disregard for rules by some participants and organizers under the influence of utilitarianism. In this incident, the fact that a team could so "efficiently" move across multiple serious national platforms has also raised strong public doubts about the information barriers and the failure of the review mechanisms among different events. </p>
+            <p>截至目前，已有至少三个涉及此事的国家级赛事组委会发布声明，称已注意到相关舆情并启动内部核查程序。其中一个赛事的主办方在回应媒体询问时表示，将调取所有参赛作品的原始提交记录、作者信息及评审流程材料进行彻查，并承诺对查实的违规行为“零容忍”，取消相关成绩并予以公示。</p>
+            <p>So far, at least three national-level event organizing committees related to this matter have issued statements, saying that they have noticed the relevant public opinions and initiated internal verification procedures. One of the event organizers, in response to media inquiries, stated that they will retrieve the original submission records of all entries, author information, and review process materials for a thorough investigation, and promised to have a "zero-tolerance" policy towards any verified violations, cancelling the relevant results and making them public. </p>
+            <p>法律与教育界人士对此高度关注。有律师指出，在国家级竞赛中伪造身份、冒用他人信息参赛，不仅违反了赛事规则，情节严重的还可能触及法律红线，涉及欺诈等民事责任。教育专家则呼吁，应尽快建立跨赛事的参赛者诚信数据库，利用技术手段对参赛作品和作者信息进行全网比对，从源头遏制此类“一套人马，横扫多赛”的投机行为。</p>
+            <p>Legal and educational professionals are paying close attention to this issue. Some lawyers point out that forging identities and using others' information to participate in national-level competitions not only violates the competition rules but, in serious cases, may also cross legal boundaries and involve civil liabilities such as fraud. Education experts call for the prompt establishment of a cross-competition participant integrity database, using technological means to conduct full-network comparisons of competition entries and author information, to curb such opportunistic behaviors of "one team sweeping multiple competitions" from the source. </p>
+            <p>随着调查的深入，这场由八人团队引发的风波，或许将成为推动中国高层次学术科技竞赛体系完善监管、重塑诚信的一次重要契机。</p>
+            <p>As the investigation deepens, the controversy triggered by the eight-person team may become an important opportunity to improve the supervision of China's high-level academic and scientific competition system and restore integrity.</p>
+        </div>
+        <div class="news-footer">
+            <div class="author">By Lee Carter · Nov 18, 2026</div>
+            <a href="more-news.html" class="more-news">More News</a>
+        </div>
+    </div>
+</body>
+</html>
